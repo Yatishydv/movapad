@@ -1,0 +1,93 @@
+# =============================================================================
+# MovaPad — .gitignore
+# =============================================================================
+
+# ── Secrets & Environment ──
+.env
+.env.local
+.env.production
+*.pem
+*.key
+*.p12
+*.jks
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Node.js ──
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+dist/
+build/
+.next/
+out/
+
+# ── Rust ──
+target/
+**/*.rs.bk
+Cargo.lock
+# Note: Cargo.lock is committed for binaries (desktop), ignored for libraries
+
+# ── Flutter / Dart ──
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.iml
+.metadata
+pubspec.lock
+
+# ── Android ──
+*.apk
+*.aab
+*.dex
+*.class
+local.properties
+android/.gradle/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/gradle/wrapper/
+
+# ── iOS / macOS ──
+ios/Pods/
+ios/.symlinks/
+macos/Pods/
+macos/.symlinks/
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+**/xcuserdata/
+*.ipa
+
+# ── Tauri ──
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+
+# ── Testing ──
+coverage/
+.nyc_output/
+*.lcov
+
+# ── Logs ──
+logs/
+*.log
+
+# ── Build artifacts ──
+*.dmg
+*.msi
+*.exe
+*.deb
+*.AppImage

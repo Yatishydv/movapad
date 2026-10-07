@@ -1,0 +1,19 @@
+{
+  "name": "@movapad/protocol",
+  "version": "1.0.0",
+  "description": "MovaPad binary protocol encoder/decoder",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/**/*.test.js",
+    "test:dev": "tsc && node --test dist/**/*.test.js",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.7.0"
+  }
+}

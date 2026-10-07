@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovaPad Server</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Drag Region for Tauri window -->
+  <div data-tauri-drag-region class="titlebar"></div>
+
+  <main class="container">
+    <div class="header">
+      <div class="logo-box">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="4" width="20" height="16" rx="4"></rect>
+          <path d="M2 15h20"></path>
+        </svg>
+      </div>
+      <h1>MovaPad</h1>
+      <p class="subtitle">Your phone. Your touchpad.</p>
+    </div>
+
+    <div class="card glow-border">
+      <div class="status-indicator">
+        <div class="pulse-dot"></div>
+        <h2 id="connection-status">Ready to connect</h2>
+      </div>
+      <p id="device-info">Open MovaPad on your phone to control this Mac.</p>
+      
+      <div class="network-info">
+        <div class="info-row">
+          <span class="label">Status</span>
+          <span class="value text-blue">Listening on port 8081</span>
+        </div>
+      </div>
+      
+      <div id="qr-container" style="margin-top: 24px; text-align: center; display: flex; justify-content: center; background: white; padding: 12px; border-radius: 12px; width: fit-content; margin-inline: auto; display: none;">
+        <!-- QR Code will be injected here -->
+      </div>
+    </div>
+  </main>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
