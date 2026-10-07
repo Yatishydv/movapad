@@ -33,12 +33,12 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-          <button className="px-7 py-3.5 rounded-lg bg-neutral-900 dark:bg-white text-white dark:text-black font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors">
+          <a href="/downloads/movapad.dmg" download className="px-7 py-3.5 rounded-lg bg-neutral-900 dark:bg-white text-white dark:text-black font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors text-center">
             Download for macOS
-          </button>
-          <button className="px-7 py-3.5 rounded-lg bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 font-medium hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors">
+          </a>
+          <a href="/downloads/movapad.apk" download className="px-7 py-3.5 rounded-lg bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 font-medium hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors text-center">
             Get the Mobile App
-          </button>
+          </a>
         </div>
       </div>
       
